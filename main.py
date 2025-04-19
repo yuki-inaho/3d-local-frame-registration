@@ -777,7 +777,7 @@ def run_pipeline(args):
     available_tmpl_indices = list(tmpl_frames.keys())
     src_idx_counter = 0
 
-    # 欠損シミュレーション(2つ削る)
+    # 欠損シミュレーション
     if allow_missing_inlier and K > 0:
         missing_idx = np.random.choice(available_tmpl_indices)
         available_tmpl_indices.remove(missing_idx)
